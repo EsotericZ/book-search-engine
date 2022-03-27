@@ -48,7 +48,7 @@ const LoginForm = () => {
       });
 
       Auth.login(data.login.token);
-    } catch {
+    } catch (e) {
       console.error(e);
     }
 
