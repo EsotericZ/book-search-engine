@@ -7,6 +7,16 @@ export const LOGIN_USER = gql`
             user {
                 _id
                 username
+                email
+                bookCount
+                savedBooks {
+                    bookId
+                    authors
+                    description
+                    image
+                    link
+                    title
+                }
             }
         }
     }
@@ -19,6 +29,16 @@ export const ADD_USER = gql`
             user {
                 _id
                 username
+                email
+                bookCount
+                savedBooks {
+                    bookId
+                    authors
+                    description
+                    image
+                    link
+                    title
+                }
             }
         }
     }
@@ -42,13 +62,15 @@ export const REMOVE_BOOK = gql`
             _id
             username
             email
+            bookCount
             savedBooks {
+                bookId
                 authors
                 description
                 image
                 link
                 title
             }
+            }
         }
-    }
 `;
