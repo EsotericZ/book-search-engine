@@ -17,6 +17,7 @@ npm i
 ```
       
 ## Usage
+![Alt text](/assets/screen.png?raw=true "Screenshot")  
 To run this application
 ```
 npm run develop
